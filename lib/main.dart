@@ -61,7 +61,13 @@ class _ButtonViewState extends State<ButtonView> {
 
             ),
 
-            Spacer(flex:1),
+            //TODO: when wifi is connected wifi signal turns on
+              const Visibility(
+                visible: true,
+                  child: Icon(Icons.wifi,color:Colors.red)
+              ),
+
+            const Spacer(flex:1),
 
             SizedBox(
               height: MediaQuery
@@ -83,7 +89,7 @@ class _ButtonViewState extends State<ButtonView> {
               ),
             ),
 
-            Spacer(flex: 1),
+            const Spacer(flex: 1),
 
             SizedBox(
               height: MediaQuery
@@ -106,7 +112,7 @@ class _ButtonViewState extends State<ButtonView> {
               ),
             ),
 
-            Spacer(flex: 2),
+            const Spacer(flex: 2),
           ],
         ),
       ),
